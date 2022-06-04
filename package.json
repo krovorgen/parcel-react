@@ -1,18 +1,21 @@
 {
   "name": "parcel-react",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "dev": "parcel -p 3000 --no-cache --open chrome",
+    "build": "rm -rf dist & parcel build"
   },
   "dependencies": {
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "2.6.0",
+    "@types/react": "^18.0.11",
+    "@types/react-dom": "^18.0.5",
     "parcel": "^2.6.0",
     "prettier": "^2.6.2",
     "process": "^0.11.10",
