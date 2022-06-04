@@ -4,7 +4,7 @@
   "license": "MIT",
   "source": "src/index.html",
   "scripts": {
-    "dev": "parcel -p 3000 --no-cache --open chrome",
+    "dev": "rm -rf dist & parcel -p 3000 --no-cache --open chrome",
     "build": "rm -rf dist & parcel build"
   },
   "dependencies": {
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.6.0",
+    "@types/node": "^17.0.39",
     "@types/react": "^18.0.11",
     "@types/react-dom": "^18.0.5",
     "parcel": "^2.6.0",
@@ -23,5 +24,17 @@
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.19.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
